@@ -22,3 +22,9 @@ def get_mgmt_chain(data, id_col='fid', employee='name', manager='manager', ceo_f
     data = data.astype({'chain': 'str'})
 
     return data
+
+def label_graph(data, x, y, label, alpha=1):
+    for i in data.index:
+        record = data.loc[i]
+        ax = plt.gca()
+        ax.text(record[x] * 1.00, record[y], record[label], size='x-small', alpha=alpha)
