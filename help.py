@@ -32,3 +32,16 @@ def label_graph(data, x, y, label, alpha=1):
         record = data.loc[i]
         ax = plt.gca()
         ax.text(record[x] * 1.00, record[y], record[label], size='x-small', alpha=alpha)
+
+geo_diffs = {'Austin': -.08,
+             'Boston': -.01,
+             'Charlotte': -.09,
+             'Chicago': -.05,  # was -.06
+             'Dallas': -.06,
+             'Denver': -.06,  # was -.05
+             'Los Angeles': .01,
+             'New York': .04,  # was .05
+             'Phoenix': -.08,  # was -.12, then -.11
+             'Portland': -.05,  # was -.08, then -.07
+             'San Francisco': .07,  # was .08
+             'Seattle': 0}
