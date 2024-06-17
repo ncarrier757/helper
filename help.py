@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import pyautogui
+import time
 
 def p(text):
     print('-' * 200)
@@ -45,3 +47,12 @@ geo_diffs = {'Austin': -.08,
              'Portland': -.05,  # was -.08, then -.07
              'San Francisco': .07,  # was .08
              'Seattle': 0}
+
+def test():
+    while True:
+        pyautogui.moveTo(1500, 1000, 2)
+        pyautogui.click()
+        time.sleep(10)
+        pyautogui.moveTo(1700, 1000, 2)
+        pyautogui.click()
+        time.sleep(10)
