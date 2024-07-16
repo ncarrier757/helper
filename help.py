@@ -56,3 +56,12 @@ def test():
         pyautogui.moveTo(1700, 1000, 2)
         pyautogui.click()
         time.sleep(10)
+
+def format_millions(value, pos):
+    return f'{"{:,.1f}".format(value / 1e6)}M'
+
+def format_thousands(value, pos):
+    return f'{"{:,.1f}".format(value)}'
+
+def format_percentage(value, pos):
+    return f'{"{:.1%}".format(value)}'
