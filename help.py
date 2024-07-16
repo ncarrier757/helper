@@ -64,4 +64,4 @@ def format_thousands(value, pos):
     return f'{"{:,.0f}".format(value)}'
 
 def format_percentage(value, pos):
-    return f'{"{:.1%}".format(value)}'
+    return f'{"{:.0%}".format(value)}'
