@@ -61,7 +61,7 @@ def format_millions(value, pos):
     return f'{"{:,.1f}".format(value / 1e6)}M'
 
 def format_thousands(value, pos):
-    return f'{"{:,.1f}".format(value)}'
+    return f'{"{:,.0f}".format(value)}'
 
 def format_percentage(value, pos):
     return f'{"{:.1%}".format(value)}'
