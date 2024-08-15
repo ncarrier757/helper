@@ -29,11 +29,11 @@ def get_mgmt_chain(data, id_col='fid', employee='name', manager='manager', ceo_f
 
     return data
 
-def label_graph(data, x, y, label, alpha=1):
+def label_graph(data, x, y, label, alpha=1, size='x-small'):
     for i in data.index:
         record = data.loc[i]
         ax = plt.gca()
-        ax.text(record[x], record[y], record[label], size='x-small', alpha=alpha)
+        ax.text(record[x], record[y], record[label], size=size, alpha=alpha)
 
 geo_diffs = {'Austin': -.08,
              'Boston': -.01,
